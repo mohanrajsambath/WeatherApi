@@ -1,4 +1,4 @@
-package com.mohan.weather.data.remote.repository
+package com.mohan.weather.data.repo
 
 import com.mohan.weather.model.WeatherInfoModel
 

@@ -1,7 +1,6 @@
-package com.mohan.weather.data.remote.repository
+package com.mohan.weather.data.repo
 
 import com.mohan.weather.model.WeatherInfoModel
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

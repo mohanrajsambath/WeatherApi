@@ -1,5 +1,5 @@
-package com.sathish.carmap.base
 
+package com.mohan.weather.core
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 

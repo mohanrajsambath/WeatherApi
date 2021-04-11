@@ -1,12 +1,12 @@
-package com.mohan.weather.data.remote.repository
+package com.mohan.weather.data.repo
 
 import android.util.Log
 import com.mohan.weather.model.WeatherInfoModel
 
-class WeatherRepositoryImpl(private val doctorService: WeatherService) : WeatherRepository {
+class WeatherRepositoryImpl(private val weatherService: WeatherService) : WeatherRepository {
     override suspend fun getWeatherList(): Result<WeatherInfoModel> {
         try {
-            val response = doctorService.getWeatherInfo("Coimbatore", "", "fae7190d7e6433ec3a45285ffcf55c86")
+            val response = weatherService.getWeatherInfo("Coimbatore", "metric", "fae7190d7e6433ec3a45285ffcf55c86")
             if (response.isSuccessful) {
                 return Result.Success(response.body()!!)
                 Log.e("WeatherRepositoryImpl","---=>"+response.body()!!.toString())

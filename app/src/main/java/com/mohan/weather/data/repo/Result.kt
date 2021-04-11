@@ -1,6 +1,4 @@
-package com.mohan.weather.data.remote.repository
-
-import com.sathish.carmap.utils.ErrorResponse
+package com.mohan.weather.data.repo
 
 sealed  class Result<out T:Any> {
     data class Success<out T:Any>(val data:T):
