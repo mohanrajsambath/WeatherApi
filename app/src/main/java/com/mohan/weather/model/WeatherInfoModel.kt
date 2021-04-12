@@ -25,7 +25,7 @@ data class WeatherInfoModel(
     @SerializedName("coord")
     val coord: Coord = Coord(),
     @SerializedName("dt")
-    val dt: Int = 0, // 1571235600
+    val date: Long = 0, // 1571235600
     @SerializedName("id")
     val id: Int = 0, // 2950159
     @SerializedName("main")
