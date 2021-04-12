@@ -18,4 +18,7 @@
     <string name="str_windvalue">14</string>
     <string name="str_pressurevalue">123456789</string>
     <string name="str_humidityvalue">25</string>
+    <string name="home">Home</string>
+    <string name="city">City</string>
+    <string name="help">Help</string>
 </resources>

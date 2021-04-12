@@ -2,15 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nvaigation_graph"
-    app:startDestination="@id/weatherFragment">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/weatherFragment"
-        android:name="com.mohan.weather.view.home.WeatherFragment"
+        android:id="@+id/homeFragment"
+        android:name="com.mohan.weather.view.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        />
+    <fragment
+        android:id="@+id/cityWeatherFragment"
+        android:name="com.mohan.weather.view.city.CityWeatherFragment"
         android:label="WeatherFragment"
         tools:layout="@layout/fragment_city"
-
+        />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.mohan.weather.view.help.HelpFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/fragment_help"
         />
 
 </navigation>

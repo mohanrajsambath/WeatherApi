@@ -5,8 +5,8 @@
 // Created by : mohan                                                          /
 // Created on : 9/4/21 2:34 AM                                                 /
 // Updated on : 9/4/21 2:33 AM                                                 /
-// File Name : WeatherInfoModel.kt                                             /
-// Class Name : WeatherInfoModel.kt                                            /
+// File Name : CityWeatherInfoModel.kt                                             /
+// Class Name : CityWeatherInfoModel.kt                                            /
 //                                                                             /
 ////////////////////////////////////////////////////////////////////////////////
 

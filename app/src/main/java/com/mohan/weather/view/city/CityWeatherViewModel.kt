@@ -1,15 +1,15 @@
-package com.mohan.weather.view.home
+package com.mohan.weather.view.city
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.mohan.weather.data.repo.Result
-import com.mohan.weather.data.repo.WeatherRepository
-import com.mohan.weather.model.WeatherInfoModel
 import com.mohan.weather.core.BaseViewModel
+import com.mohan.weather.data.repo.CityWeatherRepository
+import com.mohan.weather.data.repo.Result
+import com.mohan.weather.model.WeatherInfoModel
 import kotlinx.coroutines.launch
 
-class WeatherViewModel(private val repository: WeatherRepository) : BaseViewModel(){
+class CityWeatherViewModel(private val repositoryCity: CityWeatherRepository) : BaseViewModel(){
 
     private  var weatherInfo: MutableLiveData<WeatherInfoModel> = MutableLiveData()
     val _weatherInfo: MutableLiveData<WeatherInfoModel> = weatherInfo
@@ -22,7 +22,7 @@ class WeatherViewModel(private val repository: WeatherRepository) : BaseViewMode
 
     fun getWeatherData() {
         viewModelScope.launch {
-            when(val result = repository.getWeatherList()){
+            when(val result = repositoryCity.getWeatherList()){
                 is Result.Success -> {
                     weatherInfo.value=result.data
                     Log.e("Weather Result---=>","$weatherInfo.value")
